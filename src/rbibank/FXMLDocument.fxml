@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rbibank.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="1900.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="cus" mnemonicParsing="false" onAction="#handleButtonAction" text="Customer" />
+                  <MenuItem fx:id="acc" mnemonicParsing="false" onAction="#handleButtonAction1" text="Account" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Transaction">
+            <items>
+              <MenuItem fx:id="dep" mnemonicParsing="false" onAction="#handleButtonAction2" text="Deposit" />
+                  <MenuItem fx:id="dep2" mnemonicParsing="false" onAction="#handleButtonAction23" text="Withdraw" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Transfer">
+            <items>
+              <MenuItem fx:id="tf" mnemonicParsing="false" onAction="#handleButtonAction5" text="Account to Account" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Report">
+               <items>
+                  <MenuItem mnemonicParsing="false" text=" Customer Report" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Balance">
+               <items>
+                  <MenuItem fx:id="bc" mnemonicParsing="false" onAction="#handleButtonAction6" text="Balance Check" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Account">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="User Account" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="748.0" layoutY="848.0" prefHeight="108.0" prefWidth="263.0" text="RBI" textAlignment="RIGHT" textFill="#661111">
+         <font>
+            <Font name="Times New Roman" size="96.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label alignment="CENTER" layoutX="914.0" layoutY="845.0" prefHeight="114.0" prefWidth="354.0" text="Bank" textAlignment="RIGHT" textFill="#511010">
+         <font>
+            <Font name="Times New Roman" size="96.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <ImageView fitHeight="634.0" fitWidth="937.0" layoutX="518.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202023-11-24%20at%201.17.03%20PM.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1652.0" layoutY="70.0" prefHeight="62.0" prefWidth="70.0" text="2" textFill="#220336">
+         <font>
+            <Font name="Segoe Script" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="1698.0" layoutY="95.0" prefHeight="176.0" prefWidth="82.0" text="7" textFill="#220336">
+         <font>
+            <Font name="Segoe Script" size="96.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="674.0" layoutY="765.0" prefHeight="54.0" prefWidth="618.0" text="Welcome to Home Page of">
+         <font>
+            <Font name="Times New Roman" size="48.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
